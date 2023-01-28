@@ -1,30 +1,30 @@
-import { Container } from "@/styles/utils";
-import Image from "next/image";
-import Link from "next/link";
-import styled from "styled-components";
+import { Container } from '@/styles/utils';
+import Image from 'next/image';
+import Link from 'next/link';
+import styled from 'styled-components';
 
-import Logo from "../assets/logo.png";
-import Cart from "../assets/carrinho.png";
+import Logo from '../assets/logo.png';
+import Cart from '../assets/carrinho.png';
 
 export default function Header() {
   return (
     <StyledHeader>
       <Navbar>
-        <Image src={Logo} width={200} height={100} alt="Logo ImagineShop" />
+        <Image src={Logo} width={200} height={100} alt='Logo ImagineShop' />
         <MenuList>
           <MenuItem>
-            <Link href="/">Home</Link>
+            <Link href='/'>Home</Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/about">Sobre</Link>
+            <Link href='/about'>Sobre</Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/shopping-cart">
+            <Link href='/shopping-cart'>
               <Image
                 src={Cart}
                 width={52}
                 height={52}
-                alt="Carrinho de compras"
+                alt='Carrinho de compras'
               />
             </Link>
           </MenuItem>
