@@ -2,6 +2,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import type { AppProps } from 'next/app';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import Layout from '@/components/Layout';
 config.autoAddCss = false;
 
 const GlobalStyle = createGlobalStyle`
@@ -32,7 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />;
+        <Layout>
+          <Component {...pageProps} />;
+        </Layout>
       </ThemeProvider>
     </>
   );
