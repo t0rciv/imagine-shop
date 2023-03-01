@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
 
-import Logo from '../assets/logo.png';
-import Cart from '../assets/carrinho.png';
+import Logo from '../public/images/logo.png';
+import Cart from '../public/images/carrinho.png';
 
 export default function Header() {
   return (
@@ -35,7 +35,6 @@ export default function Header() {
 }
 
 const StyledHeader = styled.header`
-  width: 100vw;
   margin: 1.87rem 0 3.125rem 0;
 `;
 

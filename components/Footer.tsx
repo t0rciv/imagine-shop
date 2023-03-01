@@ -1,6 +1,6 @@
 import { Container } from '@/styles/utils';
 import Image from 'next/image';
-import Logo from '../assets/logo.png';
+import Logo from '../public/images/logo.png';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -40,7 +40,6 @@ export default function Footer() {
 }
 
 const StyledFooter = styled.footer`
-  width: 100vw;
   height: 12.5rem;
   background-color: #f4f4f4;
 
